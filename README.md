@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Frameflix – Movie Guessing Game
 
-## Getting Started
+Description:
+Frameflix is an interactive web-based movie guessing game built with Next.js, React, and MongoDB. Players try to guess movies based on frames, earn points, and compete on a global leaderboard. Each player has a unique ID, ensuring scores are tracked and accumulated correctly. The game fetches movie data from the OMDb API and displays engaging results with a terminal-style UI.
 
-First, run the development server:
+Features:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1  Random movie selection for each round.
+2  Player score tracking with unique player ID.
+3  Accumulated scores and global ranking on a leaderboard.
+4  Submit scores and view leaderboard in real-time.
+5  Clean, minimal neon terminal-style UI.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Tech Stack:
+  
+1  Frontend: Next.js (App Router), React, Tailwind CSS
+2  Backend: Next.js API Routes, MongoDB (Mongoose)
+3  APIs: OMDb API for movie data 
+4  Utilities: uuid for unique player IDs
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Usage:
+  Clone the repository
+  Install dependencies: npm install
+  
+  Set up .env with:
+    MONGODB_URI=your_mongodb_connection_string
+    OMDB_KEY=your_omdb_api_key
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+Run the development server: npm run dev
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open http://localhost:3000 to play the game
